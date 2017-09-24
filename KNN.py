@@ -1,10 +1,16 @@
+#########################################
+#Title - Implementation of K-Nearest Neighbour in Python
+#Author - Amol Patil
+#Dataset - Iris Flower Dataset
+############################################
 from sklearn.datasets import load_iris
 iris = load_iris()
-
 from scipy.spatial import distance
 
+#Define a function to calulate euclidean distance between feature values
 def euc(a,b):
     return distance.euclidean(a,b)
+#Class for KNN Classifier
 class MyKNN():
     def fit(self,X_train, y_train):
         self.X_train = X_train
@@ -27,6 +33,7 @@ class MyKNN():
                 best_index = i
         return self.y_train[best_index]
 
+#defining variables    
 X = iris.data
 y = iris.target
 
@@ -34,8 +41,7 @@ y = iris.target
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=.5)
 
-#  create a model
-
+#create a model
 clf = MyKNN()
 
 #from sklearn.neighbors import KNeighborsClassifier
