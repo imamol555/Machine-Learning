@@ -38,7 +38,7 @@ print(clf.predict(test_data))
 
 
 
-
+##########create a plot###########
 import pydotplus
 dot_data = tree.export_graphviz(clf, out_file=None,
                          feature_names=iris.feature_names,
