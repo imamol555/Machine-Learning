@@ -10,6 +10,10 @@ Implementation of algorithms for Machine Learning using various datasets.
        
 ### 3. DecisionTree_SKlearn_iris.py
       Decision Tree algorithm implementation for iris flower dataset using SKlearn
+     
+## Support Vector Machine
+### 1. SVM_MATH_ToyData.py
+       Math behind the support vectoe machine implemented using a toy data
       
 ## Naive Bayes Classifier
 ### 1. naive_bayes_sklearn.py
@@ -21,5 +25,9 @@ Implementation of algorithms for Machine Learning using various datasets.
 
 ### 2. KNN_SKLearn_Iris.py
       K-Nearest Neighbour classifier for iris dataset using SKLearn
+      
+## Linear Regression
+### 1. LR_Tensorflow.py       
+       Linear Regression using Tensorflow 
 
 
